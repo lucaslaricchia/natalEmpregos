@@ -1,0 +1,50 @@
+.footer{
+    display: flex;
+    justify-content: center;
+    background-color: #0b4683;
+    height: 35vh;
+    width: 100%;
+}
+
+.footer-container{
+    background: none;
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+    max-width: 1180px;
+    margin-top: 30px;
+}
+
+
+.links-uteis{
+    display: flex;
+    flex-direction: column;
+    background: none;
+    color: white;
+}
+
+.links-uteis p {
+    margin-top: 10px;
+    background: none;
+}
+
+.parceiros{
+    color: white;
+    background: none;
+}
+
+.parceiros p{
+    margin-top: 10px;
+    background: none;
+}
+
+.footerlogo{
+    width: 14rem;
+    background: none;
+    margin-bottom: 20px;
+}
+
+.footerlogo img{
+    background: none;
+    height: 90%;
+}

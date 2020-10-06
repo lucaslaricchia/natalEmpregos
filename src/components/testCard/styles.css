@@ -1,0 +1,177 @@
+.box-shadow {
+	box-shadow: 0px 0px 18px -3px rgba(143, 143, 143, .50);
+}
+.box-shadow-dark {
+	box-shadow: 3px 3px 11px -3px rgba(0, 0, 0, .25);
+}
+
+body { 
+    background-color: yellow; 
+    font-family: 'Open Sans', Arial, Verdana; 
+}
+
+section { 
+    padding-top: 2rem; 
+    padding-bottom: 2rem; 
+}
+
+h6 { 
+    color: #990000; 
+}
+
+.font-weight-bolder {
+  font-weight: 900;
+}
+
+
+.display-1, .display-2, .display-3, .display-4 {
+  font-weight: 900;
+}
+
+.heading, heading-big {
+		font-weight: 800;
+		text-transform: uppercase;
+		color: red;
+		margin: 0;
+		padding: .15rem 0;
+		line-height: 1.2;
+        font-size: 2rem;
+}
+
+.heading-square{
+    padding: 1rem 1rem; border: 10px solid red; margin: .5rem auto 1rem auto;
+    transition: color .5s ease-in, border-color .5s ease-in-out;
+}
+
+heading:hover{
+    color: #ff9900;			
+    border-color: #ff9900;
+}
+
+
+.card {
+  transition: .5s ease;
+  border-radius: 0;
+  transform: perspective(3em) rotateX(0deg) rotateY(-1.175deg) rotateZ(-1deg);
+}
+.card header {
+    border-radius: 0;
+}
+.card-footer {
+    padding-top:1rem;
+    padding-bottom:1rem;
+  }
+.card-header, .card-footer {
+    transition: .5s ease;
+  }
+
+.card-header:hover {
+    box-shadow: 0px 0px 20px -3px rgba(143, 143, 143, .75);        
+    border-color:darken(#ffc107,0%);
+	 transform: perspective(0em) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+}
+.card-header, .card-footer {
+      color: darken(#ffc107,15%);
+      border-color: darken(#ffc107,0%);
+      background-color: lighten(#ffc107,35%);
+}
+
+.promotion-promo {
+      transform: scale(1.175) translateY(2.5px);
+      transform-origin: left center;
+}
+
+.promotion-price {
+      transform: translate(2.5px,17.5px) scale(1.15);
+      transform-origin: center right;
+}
+
+
+.promotion-body {
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+.btn {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.promotion , .promotion-promo {
+		font-weight: 700;
+		font-size: 1.15rem;
+		color: #ffc107;
+		font-family: 'Roboto' , sans-serif;
+		text-decoration: line-through;
+		transition: .25s linear;
+	}
+.promotion-price {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		background:  #ffc107;
+		width: 92px;
+		height: 92px;
+		padding-bottom: 0rem;
+		padding-top: 1.25rem;
+		text-align: center;
+		font-weight: 700;
+		font-family: 'Robot', sans-serif;
+		font-size: 1.1rem;
+		border-radius: 5rem;
+		color: #FFF;
+		z-index: -1;
+		transform: translate(5px,27.5px) rotate(-9deg);
+      border: 1px dashed #FFF;
+      transition: .25s linear;
+      line-height: 1.15;
+}
+.promotion-desc {
+      padding: 0;
+      margin: 0 auto;
+      text-transform: uppercase;
+      font-size: .9rem;
+      display: block;
+}
+
+.promotion-text { 
+      padding: 0;
+      margin: 0 auto;
+      font-weight: 900;
+}
+
+.card-animate {
+    counter-reset: section;
+}
+.card-animate .card-body, .card-animate:before {
+			transition: .5s ease;
+			counter-increment: section;
+			content: "" counter(section) "";
+			display: block;
+			font-size: 15rem;
+			font-weight: 900;
+			position: absolute;
+			bottom: 5rem;
+			line-height: 0;
+			left: -.85rem;
+			padding: 0;
+			margin: 0;
+			color: rgba(0,0,0,.10);
+			z-index: 0;
+
+}
+
+.card, .card:hover .card-body, .card:before {
+	transform: translate(10px,-10px);
+}
+.card-text {
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+}
+.card-title {
+		font-weight: 900;
+	text-transform: uppercase;
+}
